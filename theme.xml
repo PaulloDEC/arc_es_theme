@@ -1,0 +1,368 @@
+<!--
+theme name:     Arc
+version:        1.0
+author:         Paul S
+email:          
+website:        
+license:        Creative commons CC-BY-NC-SA
+notes:          Inspired by the key art of Embark Studios' Arc Raiders
+-->
+
+<theme>
+
+    <formatVersion>4</formatVersion>
+
+<!--Carousel Settings-->
+
+<feature supported="carousel">
+
+<!---
+
+========================== Screen Section ==========================
+
+-->
+
+    <view name="screen">
+
+<!-- Battery-->
+
+    <batteryIndicator name="batteryIndicator">
+        <pos>0.792 0.015</pos>
+        <size>0.065 0.065</size>
+        <full>./_inc/images/sys_indic/batt_full.svg</full>
+        <at75>./_inc/images/sys_indic/batt_75.svg</at75>
+        <at50>./_inc/images/sys_indic/batt_50.svg</at50>
+        <at25>./_inc/images/sys_indic/batt_25.svg</at25>
+        <empty>./_inc/images/sys_indic/batt_0.svg</empty>
+        <incharge>./_inc/images/sys_indic/batt_charging.svg</incharge>
+        <networkIcon>./_inc/images/sys_indic/wifi.svg</networkIcon>
+        <color>e9e1d0</color>
+    </batteryIndicator>
+
+<!-- Clock -->
+
+    <text name="clock">
+        <origin>0 0</origin>
+        <pos>0.42 -0.455</pos>
+        <size>1 1</size>
+        <fontSize>0.04</fontSize>
+        <alignment>center</alignment>
+        <verticalAlignment>center</verticalAlignment>
+        <fontPath>./_inc/fonts/olney_light.otf</fontPath>
+        <color>e9e1d0</color>
+    </text>
+
+    </view>
+
+<!---
+
+========================== Basic View Section ==========================
+
+-->
+
+<view name="basic">
+
+<!-- Backdrop Image -->
+
+      <image name="background" extra="true">
+            <path>./_inc/images/back_basic.png</path>
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+        </image>
+
+<!-- Logo Paths -->
+
+        <image name="logo">
+            <path>./_inc/systems/logos/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/arcade/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/atari/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/auto/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/genre/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/nintendo/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/sega/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/sony/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/system/${system.theme}.svg</path>
+        </image>
+
+<!-- System Logos -->
+
+            <image name="logo">
+                <origin>0.5 0.5</origin>
+                <pos>0.5 0.21</pos>
+                <maxSize>0.5 0.24</maxSize>
+            </image>
+
+<!-- Game List -->
+
+            <textlist name="gamelist">
+                <selectorColor>F9C207</selectorColor>
+                <selectedColor>18152F</selectedColor>
+                <primaryColor>e9e1d0</primaryColor>
+                <secondaryColor>888888</secondaryColor>
+                <fontPath>./_inc/fonts/olney_light.otf</fontPath>
+                <pos>0.1 0.35</pos>
+                <size>0.8 0.6</size>
+                <fontSize>0.035</fontSize>
+            </textlist>
+
+</view>
+
+<!---
+
+========================== System View Section ==========================
+
+-->
+
+<!--Carousel Settings-->
+
+   <view name="system">
+      <carousel name="systemcarousel">
+        <type>vertical</type>
+        <pos>-0.25 0</pos>
+        <size>1.5 1</size>
+        <logoScale>2</logoScale>
+        <logoSize>0.26 0.25</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>3</maxLogoCount>
+      </carousel>
+
+<!-- Logo Font -->
+
+      <text name="logoText">
+            <fontPath>./_inc/fonts/olney_light.otf</fontPath>
+            <forceUppercase>true</forceUppercase>
+            <lineSpacing>1</lineSpacing>
+            <alignment>center</alignment>
+            <fontSize>0.05</fontSize>
+            <color>E9E1D0</color>
+        </text>
+
+<!-- Logo Paths -->
+
+        <image name="logo">
+            <path>./_inc/systems/logos/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/arcade/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/atari/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/auto/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/genre/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/nintendo/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/sega/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/sony/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/system/${system.theme}.svg</path>
+        </image>
+
+<!--Number of Games Settings-->
+
+    <text name="systemInfo">
+        <pos>0 0.65</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>FFFFFF</color>
+        <fontPath>./_inc/fonts/olney_light.otf</fontPath>
+        <fontSize>0.03</fontSize>
+        <color>F9C207</color>
+    </text>
+   
+<!--Backdrop Image-->
+
+    <image name="background" extra="true">
+        <origin>0 0</origin>
+        <pos>0 0</pos>
+        <size>1 1</size>
+        <path>./_inc/images/back_main.png</path>
+    </image>
+
+   
+   </view>
+</feature>
+
+<!---
+
+========================== Detailed View Section ==========================
+
+-->
+
+    <view name="detailed">
+    
+<!-- Logo Paths -->
+
+        <image name="logo">
+            <path>./_inc/systems/logos/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/arcade/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/atari/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/auto/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/genre/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/nintendo/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/sega/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/sony/${system.theme}.svg</path>
+            <path>./_inc/systems/logos/system/${system.theme}.svg</path>
+        </image>
+
+<!-- System Logos -->
+
+            <image name="logo">
+                <origin>0.5 0.5</origin>
+                <pos>0.23 0.14</pos>
+                <maxSize>0.33 0.19</maxSize>
+            </image>
+
+<!-- Game List -->
+
+            <textlist name="gamelist">
+                <selectorColor>F9C207</selectorColor>
+                <selectedColor>18152F</selectedColor>
+                <primaryColor>e9e1d0</primaryColor>
+                <secondaryColor>888888</secondaryColor>
+                <fontPath>./_inc/fonts/olney_light.otf</fontPath>
+                <pos>0.06 0.285</pos>
+                <size>0.45 0.7</size>
+                <fontSize>0.03</fontSize>
+                <lineSpacing>1.75</lineSpacing>
+                <horizontalMargin>0.01</horizontalMargin>
+            </textlist>
+
+<!-- Backdrop Image -->
+
+            <image name="background" extra="true">
+                <origin>0 0</origin>
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>./_inc/images/back_detail.png</path>
+            </image>
+
+<!-- Game Artwork -->
+
+            <image name="md_marquee">
+                <origin>0.5 0.5</origin>
+                <pos>0.77 0.32</pos>
+                <maxSize>0.4 0.5</maxSize>
+            </image>
+
+<!-- Label Text Settings -->
+
+            <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players">
+                <color>C1AF87</color>
+                <forceUppercase>1</forceUppercase>
+                <fontPath>./_inc/fonts/olney_light.otf</fontPath>
+                <fontSize>0.025</fontSize>
+                <size>0.4 0.01</size>
+                <alignment>right</alignment>
+            </text>
+
+<!-- Metadata Text Settings -->
+
+            <text name="md_developer, md_publisher, md_genre, md_players">
+                <color>18152F</color>
+                <forceUppercase>0</forceUppercase>
+                <fontPath>./_inc/fonts/olney_light.otf</fontPath>
+                <fontSize>0.025</fontSize>
+                <size>0.4 0.02</size>
+                <alignment>right</alignment>
+            </text>
+            
+            <datetime name="md_releasedate">
+                <color>18152F</color>
+                <forceUppercase>0</forceUppercase>
+                <fontPath>./_inc/fonts/olney_light.otf</fontPath>
+                <fontSize>0.025</fontSize>
+                <size>0.4 0.02</size>
+                <alignment>right</alignment>
+            </datetime>
+
+                <text name="md_lbl_rating">
+                    <pos>0.37 0.87</pos>
+                </text>
+
+                <rating name="md_rating">
+                    <pos>0.63 0.895</pos>
+                    <size>0.25 0.035</size>
+                    <filledPath>./_inc/images/star_full_sm.png</filledPath>
+                    <unfilledPath>./_inc/images/star_hollow_sm.png</unfilledPath>
+                    <color>18152F</color>
+                </rating>
+
+                <text name="md_lbl_players">
+                    <pos>0.55 0.55</pos>
+                </text>
+                <text name="md_players">
+                    <pos>0.54 0.58</pos>
+                </text>
+
+                <text name="md_lbl_genre">
+                    <pos>0.55 0.63</pos>
+                </text>
+                <text name="md_genre">
+                    <pos>0.54 0.66</pos>
+                </text>
+
+                <text name="md_lbl_developer">
+                    <pos>0.55 0.71</pos>
+                </text>
+                <text name="md_developer">
+                    <pos>0.54 0.74</pos>
+                </text>
+
+                <text name="md_lbl_publisher">
+                    <pos>0.55 0.79</pos>
+                </text>
+                <text name="md_publisher">
+                    <pos>0.54 0.82</pos>
+                </text>
+
+                <text name="md_lbl_releasedate">
+                    <pos>0.55 0.87</pos>
+                </text>
+
+                <datetime name="md_releasedate">
+                    <pos>0.54 0.90</pos>
+                </datetime>
+
+
+    </view>
+
+<!---
+
+========================== Video View Section ==========================
+
+-->
+
+    <view name="video">
+
+  
+
+    </view>
+
+<!---
+
+========================== Grid View Section ==========================
+
+-->
+
+    <view name="grid">
+
+
+
+    </view>
+
+<!---
+
+========================== All Areas Section ==========================
+
+-->
+
+    <view name="system, basic, detailed, video, grid">
+        
+    <!--Help Bar Text-->
+
+    <helpsystem name="help">
+        <origin>0 0</origin>
+        <pos>-1 -1</pos>
+        <textColor>FFFFFF</textColor>
+        <iconColor>FFFFFF</iconColor>
+        <fontPath>./_inc/fonts/olney_light.otf</fontPath>
+        <fontSize>0.01</fontSize>
+    </helpsystem>
+
+    </view>
+
+</theme>
